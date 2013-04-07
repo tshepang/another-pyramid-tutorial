@@ -11,8 +11,8 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   01-intro
-   02-start
+   00-intro
+   01-start
 
 
 

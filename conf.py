@@ -257,4 +257,12 @@ intersphinx_mapping = {
     'tutorials': ('http://docs.pylonsproject.org/projects/pyramid_tutorials/en/latest', None),
 }
 
+# Warn about references where targets cannot be found
 nitpicky = True
+
+# Avoid the need to specify linenos
+rst_prolog = '''
+.. highlight:: python
+   :linenothreshold: 5
+'''
+

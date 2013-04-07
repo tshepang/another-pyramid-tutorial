@@ -32,6 +32,8 @@ I will not repeat the detailed info from the official documentation,
 Reading something like sold me.
 
 
+.. _prerequisites:
+
 prerequisites
 =============
 
@@ -39,9 +41,25 @@ prerequisites
 
 - I assume a Linux-based OS, but you are free to use anything else,
   and will have to adapt the instructions.
-- some Python knowledge (will use 3.3)
+- an installed Pyramid, in a :term:`virtualenv`; see :ref:`installing_chapter`
+- some Python knowledge (will assume `Python 3`__)
 - some SQL knowledge
 - some SQLAlchemy knowledge: :ref:`ormtutorial_toplevel`
 - some template knowledge (Jinja or Mako?)
 - some HTML knowledge
 
+__ http://docs.python.org/3
+
+
+advice
+======
+
+I will sprinkle links all over this tutorial,
+but do not be pressured to visit them;
+I will try to keep this all self-contained,
+with the exception of the above-mentioned :ref:`prerequisites`.
+Try not to be led astray (there's so much info out there),
+but feel free to keep notes/bookmarks.
+If you do get stuck, `tell me how I can improve the tutorial`.
+
+__ https://bitbucket.org/tshepang/another-pyramid-tutorial/issues
