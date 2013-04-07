@@ -3,13 +3,16 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to another Pyramid tutorial's documentation!
-====================================================
+another Pyramid tutorial
+========================
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
+
+   01-intro
+   02-start
 
 
 
