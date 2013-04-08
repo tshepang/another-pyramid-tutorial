@@ -26,7 +26,7 @@ Let's go through it:
 
 .. TODO: what is WSGI
 
-- *line 21*: we call ``main()``, which returns a WSGI app.
+- *line 21*: we call ``main()``, which returns a :term:`WSGI` app.
 - *line 22*: we use :func:`~wsgiref.simple_server.make_server` to create
   a WSGI server.
 - ``0.0.0.0`` means this server listens on all configured interfaces,
