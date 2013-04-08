@@ -60,6 +60,6 @@ I will try to keep this all self-contained,
 with the exception of the above-mentioned :ref:`prerequisites`.
 Try not to be led astray (there's so much info out there),
 but feel free to keep notes/bookmarks.
-If you do get stuck, `tell me how I can improve the tutorial`.
+If you do get stuck, `tell me how I can improve the tutorial`__.
 
 __ https://bitbucket.org/tshepang/another-pyramid-tutorial/issues
