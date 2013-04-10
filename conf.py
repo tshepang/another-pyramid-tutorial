@@ -262,7 +262,7 @@ nitpicky = True
 
 # Avoid the need to specify linenos
 rst_prolog = '''
-.. highlight:: python
+.. highlight:: python3
    :linenothreshold: 5
 '''
 
