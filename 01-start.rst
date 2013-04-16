@@ -80,7 +80,7 @@ And we are not even done yet, but let's not give in just yet:
   which in our case is just root (``/``).
 - *line 9*: here we define the View; do consider the ``request`` object magic
   for now... a sudden appearance of something that seems to come from nowhere.
-  I displayed its content out of curiosity (``print request``),
+  I displayed its content out of curiosity (``print(request)``),
   and got this output:
 
   .. code-block:: text
