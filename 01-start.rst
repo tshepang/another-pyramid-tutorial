@@ -106,7 +106,7 @@ summary
 
 Basically, we create a WSGI app and serve it.
 We do of course have to configure it,
-things like what route pattern for which View (yes, we can have a few Views).
+things like what route pattern for which View (yes, we can have a few of each).
 The View would then result in the desired displayed info on the browser.
 
 
