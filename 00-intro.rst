@@ -7,13 +7,11 @@ Introduction
 why another tutorial
 ====================
 
-There are a few Pyramid tutorials out there;
-some are part of the :ref:`official documentation <index>`,
-and some are part of the :ref:`pyramid-tutorials` collection.
-So why one more? Two reasons:
+There are a few :ref:`pyramid-tutorials` out there,
+so you may wonder why one more:
 
-* A tutorial I would have loved to read when I first came across
-  the web framework;
+* I wanted to write a tutorial I would have loved to read when I first
+  came across the web framework;
   I prefer a gentler approach than what I've seen so far.
 
 * An excuse for me to learn Pyramid (and web technologies) more thoroughly;
@@ -29,7 +27,7 @@ why Pyramid
 
 I will not repeat the detailed info from the official documentation,
 :ref:`what_makes_pyramid_unique`.
-Reading something like sold me.
+Reading something like that was enough to choose Pyramid over competitors.
 
 
 .. _prerequisites:
