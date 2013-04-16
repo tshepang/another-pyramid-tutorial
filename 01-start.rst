@@ -81,18 +81,20 @@ And we are not even done yet, but let's not give in just yet:
 - *line 9*: here we define the View; do consider the ``request`` object magic
   for now... a sudden appearance of something that seems to come from nowhere.
   I displayed its content out of curiosity (``print request``),
-  and got this output::
+  and got this output:
 
-    GET / HTTP/1.1
-    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
-    Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
-    Accept-Encoding: gzip,deflate,sdch
-    Accept-Language: en-GB,en-US;q=0.8,en;q=0.6
-    Cache-Control: max-age=0
-    Connection: keep-alive
-    Content-Length:
-    Content-Type: text/plain
-    Host: localhost:8080
+  .. code-block:: text
+
+     GET / HTTP/1.1
+     Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+     Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+     Accept-Encoding: gzip,deflate,sdch
+     Accept-Language: en-GB,en-US;q=0.8,en;q=0.6
+     Cache-Control: max-age=0
+     Connection: keep-alive
+     Content-Length:
+     Content-Type: text/plain
+     Host: localhost:8080
 
   HTTP stuff! You probably need to read some fundamental HTTP stuff to
   fully digest all of that, but you can always postpone that.
