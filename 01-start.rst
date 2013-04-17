@@ -16,8 +16,8 @@ greeting the world
 
    A Python standard that defines an interface between web
    servers and Python web applications.
-   It is the most common such interface in the Python world,
-   and all Pyramid apps are WSGI apps.
+   It is the most common such interface in the Python world;
+   all Pyramid apps are WSGI apps.
 
 Let's dive right in:
 
