@@ -100,7 +100,7 @@ the View
   which in our case is the root path (``'/'``).
 
 - The ``request`` object contains HTTP bits,
-  and following is a result on inserting a ``print(request)`` so as to
+  and following is a result of inserting a ``print(request)`` so as to
   see its contents (out of curiosity):
 
   .. code-block:: text
