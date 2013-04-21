@@ -23,7 +23,10 @@ then :mod:`Waitress <waitress>` is most likely properly installed::
 greeting the world once more
 ============================
 
+The changes are emphasized/highlighted:
+
 .. literalinclude:: src/02.py
+   :emphasize-lines: 1, 22
 
 Run that code, then visit http://localhost:8080,
 which should display the famous greeting in your web browser.
