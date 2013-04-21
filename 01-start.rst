@@ -22,6 +22,7 @@ which should display the famous greeting in your web browser.
 Now, read the code and try to make sense of what's going on.
 It's about the most simple Pyramid app possible.
 
+
 serving the app
 ===============
 
@@ -50,6 +51,7 @@ Let's go through it:
   is killed.
 
 Okay, that was a mouthful, especially for a mere 3 lines of code.
+
 
 creating and configuring the app
 ================================
@@ -83,10 +85,9 @@ Let's see what happens in the ``main`` function:
 It does not seem to be getting easier does it?
 And we are not even done yet, but let's not give in just yet.
 
+
 the View
 ========
-
-
 
 .. literalinclude:: src/01a.py
    :lines: 8-10
@@ -133,9 +134,6 @@ the View
 
      Hello World!
 
-- I encourage to play a bit like a did,
-  and then monitor the console output of the app.
-  You should get what I got.
 
 summary
 =======
