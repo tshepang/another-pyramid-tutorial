@@ -67,12 +67,14 @@ Let's see what happens in the ``main`` function:
 
 - We add a route to our configuration, giving it some arbitrary name.
 
+.. TODO: 'route' needs a better explanation
+
 - The second argument to that ``add_route`` method, ``'/'``,
   is a matching pattern.
   In this case it represents the root path (http://localhost:8080/).
   If you used ``/greets`` instead,
   you would need to visit http://localhost:8080/greets to see what you
-  saw earlier on... ``Hello World``.
+  saw earlier on... ``Hello World!``.
 
 - :meth:`~pyramid.config.Configurator.scan` scans for objects
   marked with configuration decoration,
@@ -80,7 +82,7 @@ Let's see what happens in the ``main`` function:
 
 - In the end, we finally create (and return) the :term:`WSGI` app.
 
-.. TODO: scan needs a better explanation
+.. TODO: 'scan' needs a better explanation
 
 It does not seem to be getting easier does it?
 And we are not even done yet, but let's not give in just yet.
@@ -117,10 +119,9 @@ the View
      Content-Type: text/plain
      Host: localhost:8080
 
-  HTTP stuff! You probably need to read a bit about HTTP stuff to
-  fully digest all of that.
+  You probably need to read a bit about HTTP stuff to fully digest all of that.
 
-.. TODO: request needs a better explanation
+.. TODO: 'request' needs a better explanation
 
 - We finally return (and therefore display) the famous greeting.
   I also did a ``print(Response('Hello World!'))``,
