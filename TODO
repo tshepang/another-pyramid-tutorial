@@ -1,1 +1,17 @@
-* at the end, will use pyramid_persona for handling login and logout stuff
+- unit-test
+- output that depends on path
+- output that depends on shit like /path?name=Tshepang
+- explore non-root routes
+- intro templates
+- ...
+- intro DB, using raw SQL (with SQLite)
+- ...
+- intro SQLAlchemy
+- ...
+- intro PostgreSQL
+- ...
+- Stack Overflow clone:
+  - openid
+  - postgresql
+  - rate-limiting
+  - see if pyramid_persona would be of use
