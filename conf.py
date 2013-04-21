@@ -255,6 +255,7 @@ intersphinx_mapping = {
     'sqla': ('http://docs.sqlalchemy.org/en/latest', None),
     'pyramid': ('http://docs.pylonsproject.org/projects/pyramid/en/master', None),
     'tutorials': ('http://docs.pylonsproject.org/projects/pyramid_tutorials/en/latest', None),
+    'waitress': ('http://docs.pylonsproject.org/projects/waitress/en/latest', None),
 }
 
 # Warn about references where targets cannot be found

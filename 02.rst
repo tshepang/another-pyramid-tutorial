@@ -1,0 +1,63 @@
+********************
+A better WSGI server
+********************
+
+The server we used in the preceding chapter is part of the standard library,
+so was used for convenience.
+It is more of a demo server than something that would be used in production.
+I want us to get rid of it and used something billed as *production quality*.
+
+installation
+============
+
+Assuming that you in the :term:`virtualenv`, run the following::
+
+    pip install waitress
+
+If the following does not display any output,
+then :mod:`Waitress <waitress>` is most likely properly installed::
+
+    python -c 'import wairess'
+
+
+greeting the world once more
+============================
+
+.. literalinclude:: src/02.py
+
+Run that code, then visit http://localhost:8080,
+which should display the famous greeting in your web browser.
+
+whats new
+=========
+
+- I don't know about you, but I prefer the API;
+  it's so much cleaner (and asks for less code)
+
+- Waitress conveniently displays the url at which the app is reachable::
+
+    serving on http://0.0.0.0:8080
+
+- The terminal output of the app is more quite,
+  unless the previous code, where each request
+  (visiting http://localhost:8080) displayed this output::
+
+    127.0.0.1 - - [21/Apr/2013 14:08:05] "GET / HTTP/1.1" 200 12
+    127.0.0.1 - - [21/Apr/2013 14:08:05] "GET /favicon.ico HTTP/1.1" 404 164
+
+- If you insert a ``print(request)`` in the View,
+  like I did in the precedding chapter,
+  you will notice a slight difference in the output:
+
+  .. code-block:: text
+
+     GET / HTTP/1.1
+     Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+     Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+     Accept-Encoding: gzip,deflate,sdch
+     Accept-Language: en-GB,en-US;q=0.8,en;q=0.6
+     Cache-Control: max-age=0
+     Host: localhost:8080
+     User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.63 Safari/537.31
+
+  The response will be exactly the same. Try it and see for yourself.

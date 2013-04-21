@@ -1,4 +1,4 @@
-from waitress import serve
+import waitress
 
 from pyramid.config import Configurator
 from pyramid.response import Response
@@ -18,4 +18,5 @@ def main():
 
 
 if __name__ == '__main__':
-    server = serve(main())
+    app = main()
+    waitress.serve(app, host='0.0.0.0', port='8080')

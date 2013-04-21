@@ -14,7 +14,7 @@ greeting the world
 
 Let's dive right in:
 
-.. literalinclude:: src/01a.py
+.. literalinclude:: src/01.py
 
 Run that code, then visit http://localhost:8080,
 which should display the famous greeting in your web browser.
@@ -35,7 +35,7 @@ serving the app
 
 Let's go through it:
 
-.. literalinclude:: src/01a.py
+.. literalinclude:: src/01.py
    :lines: 20-23
 
 - We call ``main()``, which returns a :term:`WSGI` app.
@@ -58,7 +58,7 @@ creating and configuring the app
 
 Let's see what happens in the ``main`` function:
 
-.. literalinclude:: src/01a.py
+.. literalinclude:: src/01.py
    :lines: 13-17
 
 - We create a :class:`~pyramid.config.Configurator` instance.
@@ -91,7 +91,7 @@ And we are not even done yet, but let's not give in just yet.
 the View
 ========
 
-.. literalinclude:: src/01a.py
+.. literalinclude:: src/01.py
    :lines: 8-10
 
 - This decorator indicates that the function decorated is a View,
@@ -115,9 +115,11 @@ the View
      Accept-Language: en-GB,en-US;q=0.8,en;q=0.6
      Cache-Control: max-age=0
      Connection: keep-alive
-     Content-Length:
+     Content-Length: 
      Content-Type: text/plain
      Host: localhost:8080
+     User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.63 Safari/537.31
+
 
   You probably need to read a bit about HTTP stuff to fully digest all of that.
 
