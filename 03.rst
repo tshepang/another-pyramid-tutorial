@@ -22,6 +22,52 @@ The result of running the app should look like:
    OK
 
 
+what happenin
+=============
+
+.. literalinclude:: src/ch03.py
+   :lines: 6-10
+
+- :meth:`~unittest.TestCase.setUp` is called before each test run.
+
+- Similarly, :meth:`~unittest.TestCase.tearDown` is called after each test run.
+
+.. literalinclude:: src/ch03.py
+   :lines: 12-16
+
+- :class:`~pyramid.testing.DummyRequest` is used specifically for helping test
+  Pyramid apps, and imitates a normal :term:`request` object.
+  It is here used to generate an object which will be used as an
+  argument to our function, ``hello_world``.
+
+- :meth:`~unittest.TestCase.assertEqual` check for equality between the two
+  strings.
+
+- :class:`~pyramid.response.Response` provides a large number of attributes,
+  one of which is :attr:`~pyramid.response.Response.body`.
+  You may have guessed that it contains the body of the Response object.
+  You are aware that the unit under test, the ``hello_world`` function,
+  returns a Response object right? Have a look again at the function.
+
+  .. literalinclude:: src/ch03.py
+     :lines: 18, 19
+
+- The last line provides the script very useful command-line interface.
+  Have a look, for example, on the options that this enables:
+
+  .. code-block:: text
+
+     $ python src/ch03.py --help
+     Usage: ch03.py [options]
+
+     Options:
+     -h, --help      show this help message and exit
+     -v, --verbose   Verbose output
+     -q, --quiet     Quiet output
+     -f, --failfast  Stop on first fail or error
+     -c, --catch     Catch ctrl-C and display results so far
+     -b, --buffer    Buffer stdout and stderr during tests
+
 .. seealso::
 
    The official documentation has a detailed chapter on testing,
