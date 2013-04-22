@@ -38,7 +38,7 @@ prerequisites
 .. TODO: finish this
 
 - I assume a Linux-based OS, but you are free to use anything else,
-  and will have to adapt the instructions.
+  and will have to adapt the relevant instructions.
 - an installed Pyramid, in a :term:`virtualenv`; see :ref:`installing_chapter`
 - some Python knowledge (will assume `Python 3`__)
 - some SQL knowledge
