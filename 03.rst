@@ -1,0 +1,28 @@
+***************
+Testing the app
+***************
+
+Before our app gets any more complex, let us test it a bit:
+
+.. literalinclude:: src/ch03.py
+   :emphasize-lines: 13
+
+Change the emphasized line to match the actual module you used for the
+code in the preceeding chapter. I named my module to match the chapter,
+but would have used something more meaningful otherwise.
+
+The result of running the app should look like:
+
+.. code-block:: text
+
+   .
+   ----------------------------------------------------------------------
+   Ran 1 test in 0.069s
+
+   OK
+
+
+.. seealso::
+
+   The official documentation has a detailed chapter on testing,
+   :ref:`testing_chapter`.

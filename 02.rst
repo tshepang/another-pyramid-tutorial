@@ -25,7 +25,7 @@ greeting the world once more
 
 The changes are emphasized/highlighted:
 
-.. literalinclude:: src/02.py
+.. literalinclude:: src/ch02.py
    :emphasize-lines: 1, 22
 
 Run that code, then visit http://localhost:8080,
@@ -37,16 +37,20 @@ whats new
 - I don't know about you, but I prefer the API;
   it's so much cleaner (and asks for less code)
 
-- Waitress conveniently displays the url at which the app is reachable::
+- Waitress conveniently displays the url at which the app is reachable:
 
-    serving on http://0.0.0.0:8080
+  .. code-block:: text
+
+     serving on http://0.0.0.0:8080
 
 - The terminal output of the app is more quite,
   unless the previous code, where each request
-  (visiting http://localhost:8080) displayed this output::
+  (visiting http://localhost:8080) displayed this output:
 
-    127.0.0.1 - - [21/Apr/2013 14:08:05] "GET / HTTP/1.1" 200 12
-    127.0.0.1 - - [21/Apr/2013 14:08:05] "GET /favicon.ico HTTP/1.1" 404 164
+  .. code-block:: text
+
+     127.0.0.1 - - [21/Apr/2013 14:08:05] "GET / HTTP/1.1" 200 12
+     127.0.0.1 - - [21/Apr/2013 14:08:05] "GET /favicon.ico HTTP/1.1" 404 164
 
 - If you insert a ``print(request)`` in the View,
   like I did in the precedding chapter,
