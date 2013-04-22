@@ -15,11 +15,14 @@ The result of running the app should look like:
 
 .. code-block:: text
 
+   $ python ch03.py
    .
    ----------------------------------------------------------------------
    Ran 1 test in 0.069s
 
    OK
+
+The number of dots represent the number of tests run.
 
 
 what happenin
@@ -70,5 +73,5 @@ what happenin
 
 .. seealso::
 
-   The official documentation has a detailed chapter on testing,
+   The official Pyramid documentation has a detailed chapter on testing,
    :ref:`testing_chapter`.
