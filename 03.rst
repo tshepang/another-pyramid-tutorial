@@ -5,7 +5,7 @@ Testing the app
 Before our app gets any more complex, let us test it a bit:
 
 .. literalinclude:: src/ch03.py
-   :emphasize-lines: 13
+   :emphasize-lines: 14
 
 Change the emphasized line to match the actual module you used for the
 code in the preceeding chapter. I named my module to match the chapter,
@@ -29,14 +29,14 @@ what happenin
 =============
 
 .. literalinclude:: src/ch03.py
-   :lines: 6-10
+   :lines: 7-11
 
 - :meth:`~unittest.TestCase.setUp` is called before each test run.
 
 - Similarly, :meth:`~unittest.TestCase.tearDown` is called after each test run.
 
 .. literalinclude:: src/ch03.py
-   :lines: 12-16
+   :lines: 13-17
 
 - :class:`~pyramid.testing.DummyRequest` is used specifically for helping test
   Pyramid apps, and imitates a normal :term:`request` object.
