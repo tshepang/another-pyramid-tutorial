@@ -2,7 +2,7 @@ import unittest
 
 from pyramid import testing
 
-class Tests(unittest.TestCase):
+class UnitTests(unittest.TestCase):
 
     def setUp(self):
         self.config = testing.setUp()
@@ -21,6 +21,21 @@ class Tests(unittest.TestCase):
         request = testing.DummyRequest()
         response = goodbye_world(request)
         self.assertEqual(b'Goodbye World!', response.body)
+
+
+class FunctionalTests(unittest.TestCase):
+
+    def setUp(self):
+        from ch04 import main
+        import webtest
+        self.testapp = webtest.TestApp(main())
+
+    def test_hello(self):
+        self.assertIn('Hello World!', self.testapp.get('/'))
+
+    def test_goodbye(self):
+        self.assertIn('Goodbye World!', self.testapp.get('/bye'))
+
 
 if __name__ == '__main__':
     unittest.main()

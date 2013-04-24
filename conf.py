@@ -256,6 +256,7 @@ intersphinx_mapping = {
     'pyramid': ('http://docs.pylonsproject.org/projects/pyramid/en/master', None),
     'tutorials': ('http://docs.pylonsproject.org/projects/pyramid_tutorials/en/latest', None),
     'waitress': ('http://docs.pylonsproject.org/projects/waitress/en/latest', None),
+    'webtest': ('http://docs.pylonsproject.org/projects/webtest/en/latest', None),
 }
 
 # Warn about references where targets cannot be found

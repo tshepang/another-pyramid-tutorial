@@ -20,7 +20,7 @@ testing
 We need to add one more test case to cover the new View:
 
 .. literalinclude:: src/ch04a.py
-   :emphasize-lines: 14, 19-23
+   :emphasize-lines: 5, 14, 19-23
 
 - This is just one more, and very similar test method, as the last chapter,
   so should not need explaining.
@@ -40,3 +40,4 @@ We need to add one more test case to cover the new View:
      Ran 2 tests in 0.073s
 
      OK
+

@@ -1,0 +1,39 @@
+******************
+functional testing
+******************
+
+What we been doin so far is unit testing, which is a form of testing
+that checks specific *units* at a time.
+Functional testing, on the other hand, checks the whole application:
+
+.. literalinclude:: src/ch05.py
+   :emphasize-lines: 5, 26-37
+
+Ensure that you have :mod:WebTest installed, then run the script,
+after which all tests should pass.
+
+what happenin
+=============
+
+.. literalinclude:: src/ch05.py
+   :lines: 26-37
+
+- You will notice that the ``setUp`` method is much different from
+  that of the ``UnitTest`` class:
+
+  - Here we import the main function of the app, ``main``.
+  - We also call that function while wrapped in :class:`~webtest.app.TestApp`
+    class.
+  - This class wraps WSGI apps in order to offer an interface convenient
+    for testing.
+
+- An example of the above-mentioned convenience is removing the need
+  to serve the app (by :mod:`waitress` for example).
+  Instead, we simply use the :meth:`~webtest.app.TestApp.get` method,
+  which in the two test cases above, is similar to visiting
+  http://localhost:8080/ and http://localhost:8080/bye.
+
+- :meth:`~unittest.TestCase.assertIn` is pretty much similar to
+  code like ``'x' in 'exciting'``, which is a truth test.
+  In our code, it just checks if the indicated strings are part
+  of the returned response.
