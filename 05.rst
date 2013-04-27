@@ -9,7 +9,7 @@ Functional testing, on the other hand, checks the whole application:
 .. literalinclude:: src/ch05.py
    :emphasize-lines: 5, 26-37
 
-Ensure that you have :mod:WebTest installed, then run the script,
+Ensure that you have :mod:`WebTest <webtest>` installed, then run the script,
 after which all tests should pass.
 
 what happenin
