@@ -73,5 +73,4 @@ what happenin
 
 .. seealso::
 
-   The official Pyramid documentation has a detailed chapter on testing,
-   :ref:`testing_chapter`.
+   A detailed chapter from the official docs: :ref:`testing_chapter`.
