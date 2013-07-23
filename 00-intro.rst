@@ -42,7 +42,6 @@ prerequisites
 - an installed Pyramid, in a :term:`virtualenv`; see :ref:`installing_chapter`
 - some Python knowledge (will assume `Python 3`__)
 - some SQL knowledge
-- some SQLAlchemy knowledge: :ref:`ormtutorial_toplevel`
 - some template knowledge (Jinja or Mako?)
 - some HTML knowledge
 
@@ -61,3 +60,26 @@ but feel free to keep notes/bookmarks.
 If you do get stuck, `tell me how I can improve the tutorial`__.
 
 __ https://bitbucket.org/tshepang/another-pyramid-tutorial/issues
+
+
+TODO
+====
+
+- output that depends on path
+- output that depends on shit like /path?name=Tshepang
+- explore non-root routes
+- intro templates
+- ...
+- intro DB, using raw SQL (with SQLite)
+- ...
+- intro SQLAlchemy
+- ...
+- intro PostgreSQL
+- maybe: some SQLAlchemy knowledge: :ref:`ormtutorial_toplevel`
+- ...
+- Stack Overflow clone:
+
+  - openid
+  - postgresql
+  - rate-limiting
+  - see if pyramid_persona would be of use
