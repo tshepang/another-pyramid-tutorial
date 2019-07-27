@@ -53,7 +53,7 @@ what happenin
   returns a Response object right? Have a look again at the function.
 
   .. literalinclude:: src/ch03.py
-     :lines: 18, 19
+     :lines: 19, 20
 
 - The last line provides the script very useful command-line interface.
   Have a look, for example, on the options that this enables:
